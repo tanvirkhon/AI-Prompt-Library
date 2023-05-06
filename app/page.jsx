@@ -1,3 +1,6 @@
+// Import components/Feed.jsx
+import Feed from "@components/Feed";
+
 const Home = () => {
   return (
     <section className="w-full flex-center flex-col ">
@@ -11,7 +14,7 @@ const Home = () => {
         create and share AI prompts with the community.
       </p>
 
-      {/* Feed Component */}
+      <Feed />
     </section>
   );
 };
