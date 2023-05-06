@@ -1,6 +1,11 @@
 // Import styles
 import "@styles/globals.css";
 
+// Import Navbar component
+import Nav from "@components/Nav";
+// Import Provider component
+import Provider from "@components/Provider";
+
 // Metadata
 export const metadata = {
   title: "Promptmaster",
@@ -14,7 +19,10 @@ const RootLayout = ({ children }) => {
           <div className="gradient" />
         </div>
 
-        <main className="app">{children}</main>
+        <main className="app">
+          <Nav />
+          {children}
+        </main>
       </body>
     </html>
   );
